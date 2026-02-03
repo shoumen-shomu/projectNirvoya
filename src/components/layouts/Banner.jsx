@@ -10,6 +10,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay , Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { Link } from "react-router-dom"
 
 
 const Banner = () => {
@@ -32,16 +33,22 @@ const Banner = () => {
                             }}
                             modules={[Autoplay , Pagination]}
                             spaceBetween={30} 
-                            className="h-full"> 
-                                <SwiperSlide>
-                                    <Images imgSrc={banner1} className="w-full h-full object-cover rounded-[20px] cursor-pointer"/>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <Images imgSrc={banner4} className="w-full h-full object-cover rounded-[20px] cursor-pointer"/>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <Images imgSrc={banner5} className="w-full h-full object-cover rounded-[20px] cursor-pointer"/>
-                                </SwiperSlide>
+                            className="h-full">
+                                <Link to={'/'}>
+                                    <SwiperSlide>
+                                        <Images imgSrc={banner1} className="w-full h-full object-cover rounded-[20px] cursor-pointer"/>
+                                    </SwiperSlide>
+                                </Link>
+                                <Link to={'/'}>
+                                    <SwiperSlide>
+                                        <Images imgSrc={banner4} className="w-full h-full object-cover rounded-[20px] cursor-pointer"/>
+                                    </SwiperSlide>
+                                </Link>
+                                <Link to={'/'}>
+                                    <SwiperSlide>
+                                        <Images imgSrc={banner5} className="w-full h-full object-cover rounded-[20px] cursor-pointer"/>
+                                    </SwiperSlide>
+                                </Link>
                         </Swiper>
                     </div>
                     {/* Left Side: Swiper */}
