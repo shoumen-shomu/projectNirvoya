@@ -21,7 +21,7 @@ const Footer = () => {
                   <Images imgSrc={fLogo} />
                 </Link>
               </div>
-              <p className="text-[#333333]/80 text-[18px] font-Lato w-[390px] leading-7 pt-10">
+              <p className="text-[#333333]/80 text-[18px] w-[390px] leading-7 pt-10">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
@@ -42,10 +42,10 @@ const Footer = () => {
             </div>
             {/* QUICK LINKS Start  */}
             <div className="">
-              <h4 className="text-[#333333] text-[20px] font-medium font-Poppins">
+              <h4 className="text-[#333333] text-[20px] font-medium">
                 QUICK LINKS
               </h4>
-              <ul className="text-[#333333]/80 text-[18px] font-Poppins flex flex-col gap-y-7.5 mt-10">
+              <ul className="text-[#333333]/80 text-[18px] flex flex-col gap-y-7.5 mt-10">
                 <li>
                   <Link> About us</Link>
                 </li>
@@ -65,10 +65,10 @@ const Footer = () => {
             </div>
             {/* CUSTOMER AREA start  */}
             <div className="">
-              <h4 className="text-[#333333] text-[20px] font-medium font-Poppins">
+              <h4 className="text-[#333333] text-[20px] font-medium">
                 CUSTOMER AREA
               </h4>
-              <ul className="text-[#333333]/80 text-[18px] font-Poppins flex flex-col gap-y-7.5 mt-10">
+              <ul className="text-[#333333]/80 text-[18px] flex flex-col gap-y-7.5 mt-10">
                 <li>
                   <Link> My Account</Link>
                 </li>
@@ -88,10 +88,10 @@ const Footer = () => {
             </div>
             {/* CONTACT start  */}
             <div className="">
-              <h4 className="text-[#333333] text-[20px] font-medium font-Poppins">
+              <h4 className="text-[#333333] text-[20px] font-medium">
                 CONTACT
               </h4>
-              <p className="text-[#333333]/80 text-base font-Poppins w-[340px] leading-6 py-10">
+              <p className="text-[#333333]/80 text-base w-[340px] leading-6 py-10">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor
               </p>
@@ -99,10 +99,10 @@ const Footer = () => {
                 <Images imgSrc={Headphone} />
 
                 <div className="">
-                  <h5 className="text-[#333333] text-[18px] font-Poppins">
+                  <h5 className="text-[#333333] text-[18px]">
                     Have any question?
                   </h5>
-                  <h3 className="text-[#0198E9] text-[28px] font-semibold font-Poppins">
+                  <h3 className="text-[#0198E9] text-[28px] font-semibold">
                     099 456 789
                   </h3>
                 </div>
@@ -114,11 +114,11 @@ const Footer = () => {
       {/* Bottom items  */}
       <Container>
         <div className="mt-10 flex items-center justify-between">
-          <p className="text-[#757575] text-base font-Poppins">
+          <p className="text-[#757575] text-base ">
             Projectnirvoya - © 2021 All Rights Reserved
           </p>
           <div className="flex items-center gap-x-4">
-            <h4 className="text-[#0198E9]/80 text-[18px] font-medium font-Poppins">
+            <h4 className="text-[#0198E9]/80 text-[18px] font-medium ">
               Pay With
             </h4>
             <Images imgSrc={paymentApps} />
