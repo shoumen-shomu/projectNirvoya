@@ -37,7 +37,7 @@ const FlashDeals = () => {
             />
             <Product
               productImg={w2}
-              badgeText={""}
+              badgeText={"-23% OFF"}
               productRating={
                 <>
                   <IoStar /> 
@@ -52,7 +52,7 @@ const FlashDeals = () => {
             />
             <Product
               productImg={w3}
-              badgeText={""}
+              badgeText={"-23% OFF"}
               productRating={
                 <>
                   <IoStar /> 
@@ -67,7 +67,7 @@ const FlashDeals = () => {
             />
             <Product
               productImg={w4}
-              badgeText={""}
+              badgeText={"-23% OFF"}
               productRating={
                 <>
                   <IoStar /> 
