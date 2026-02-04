@@ -20,7 +20,7 @@ const Product = ({
     <div> 
       <div className="bg-white px-[9px] pt-[9px] pb-[15px] border-2 border-[#E9E9E9] rounded-[10px] inline-block relative">
         <Images className={'cursor-pointer'} imgSrc={productImg} />
-        <Badge className={"absolute top-[9px] left-[9px]"} badgeText={badgeText}/>
+        {badgeText && <Badge className={"absolute top-[9px] left-[9px]"} badgeText={badgeText}/>}
         <FaHeart 
           onClick={handleLike}
           className={`absolute top-[25px] right-[25px] text-[25px] cursor-pointer transition-all duration-300 ${isLiked ? 'text-red-500' : 'text-gray-300'}`} />
@@ -31,10 +31,10 @@ const Product = ({
             </div>
             <p className="text-[12px]">(0)</p>
           </div>
-          <h3 className="w-[294px] py-2.5 font-Poppins font-normal text-[18px] text-[#383838] leading-[150%]">
+          <h3 className="w-[294px] h-12 py-2.5 font-Poppins font-normal text-[18px] text-[#383838] leading-[150%]">
             {productTitle}
           </h3>        
-          <Flex className="justify-between items-center">
+          <Flex className="justify-between items-center pt-5">
             <p className="font-Poppins font-medium text-[22px] text-[#0970CD]">
               {productPrice}
             </p>
