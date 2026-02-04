@@ -10,14 +10,14 @@ const FooterTop = () => {
   return (
     <>
       <div className=" mt-10">
-       <Container>
-         <div className="flex items-center justify-between py-10">
-          <Images imgSrc={Footertop1} />
-          <Images imgSrc={Footertop2} />
-          <Images imgSrc={Footertop3} />
-          <Images imgSrc={Footertop4} />
-        </div>
-       </Container>
+        <Container>
+          <div className="flex items-center justify-between py-10">
+            <Images imgSrc={Footertop1} />
+            <Images imgSrc={Footertop2} />
+            <Images imgSrc={Footertop3} />
+            <Images imgSrc={Footertop4} />
+          </div>
+        </Container>
       </div>
     </>
   );

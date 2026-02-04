@@ -3,16 +3,18 @@ import Banner from '../layouts/Banner'
 import Category from '../layouts/Category'
 import FlashDeals from '../layouts/FlashDeals'
 import FeaturedProduct from '../layouts/FeaturedProduct'
+import FooterTop from '../layouts/FooterTop'
 
 
 const Home = () => {
         return (
-                <>
-                <Banner/>
-                <Category/>
-                <FlashDeals/>
-                <FeaturedProduct/>
-                </>
+        <>
+        <Banner/>
+        <Category/>
+        <FlashDeals/>
+        <FeaturedProduct/>
+        <FooterTop/>
+        </>
         )
 }
 
