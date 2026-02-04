@@ -27,7 +27,7 @@ const Product = ({
           >
             {productRating}
           </div>
-          <h3 className="w-[294px] py-[10px] font-Poppins font-normal text-[18px] text-[#383838] leading-[150%]">
+          <h3 className="w-[294px] py-2.5 font-Poppins font-normal text-[18px] text-[#383838] leading-[150%]">
             {productTitle}
           </h3>        
           <Flex className="space-x-[195px]">

@@ -15,6 +15,10 @@ import facebook from "/src/assets/facebook.png";
 import whatsapp from "/src/assets/whatsapp.png";
 import link from "/src/assets/link.png";
 import { Link } from "react-router-dom";
+import { IoStarSharp } from "react-icons/io5";
+import { FaCheck } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa";
+import { IoIosCheckmarkCircle } from "react-icons/io";
 
 const ProductDetails = () => {
   return (
@@ -31,7 +35,7 @@ const ProductDetails = () => {
             Men's Stand Collar Leather Jacket
           </span>
         </h6>
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-2 gap-x-[115px] justify-between">
           <div className="w-[680px]">
             <div className="flex gap-x-6">
               <div className="">
@@ -55,18 +59,119 @@ const ProductDetails = () => {
                   </Link>
                 </div>
               </div>
-              <div className="flex flex-col items-center gap-y-[10px]">
-                <a href="#">
+              <div className="flex flex-col items-center gap-y-2.5">
+                <button className="cursor-pointer">
                   <FaChevronUp className="text-[#949494] text-base mb-3" />
-                </a>
-                <Images imgSrc={productDetailsSmall1} />
-                <Images imgSrc={productDetailsSmall2} />
-                <Images imgSrc={productDetailsSmall3} />
-                <Images imgSrc={productDetailsSmall4} />
-                <a href="#">
+                </button>
+                <button className="cursor-pointer"><Images imgSrc={productDetailsSmall1} /></button>
+                <button className="cursor-pointer"><Images imgSrc={productDetailsSmall2} /></button>
+                <button className="cursor-pointer"><Images imgSrc={productDetailsSmall3} /></button>
+                <button className="cursor-pointer"><Images imgSrc={productDetailsSmall4} /></button>
+                <button className="cursor-pointer">
                   <FaChevronDown className="text-[#0198E9] text-base mt-3" />
-                </a>
+                </button>
               </div>
+            </div>
+          </div>
+          <div className="w-[610px]">
+            <h3 className="text-[#333333] text-[26px] font-medium pb-4.5">
+              Super Skinny Rib Trouser & Joggers for Men By Sowdagar Trouser
+            </h3>
+            <div className="flex items-center pb-8">
+              <span className="text-[#333] text-lg font-medium pr-[5px]">
+                4.0
+              </span>
+              <div className="flex items-center gap-x-[3px] -mt-1">
+                <IoStarSharp className="text-2xl text-[#FFB340]" />
+                <IoStarSharp className="text-2xl text-[#FFB340]" />
+                <IoStarSharp className="text-2xl text-[#FFB340]" />
+                <IoStarSharp className="text-2xl text-[#FFB340]" />
+                <IoStarSharp className="text-2xl text-[#A7A7A7]" />
+              </div>
+              <span className="text-[#BABABA] text-lg pl-1">(223)</span>
+              <div className="h-7 w-0.5 rounded-[22px] bg-[#F2F2F2] mx-4" />
+              <FaCheck className="text-[#0AC96D] text-xl" />
+              <div className="text-[#333333] text-lg pl-2.5">
+                <span className="font-semibold">4,320</span> Sold
+              </div>
+              <div className="h-7 w-0.5 rounded-[22px] bg-[#F2F2F2] mx-4" />
+              <Link to={""} className="flex items-center gap-x-3">
+                <FaHeart className="text-[#C7C7C7] text-[22px]" />
+                <span className="text-[#0198E9] text-lg font-Lato font-bold pb-0.5">
+                  Add to wishlist
+                </span>
+              </Link>
+            </div>
+            <div className="flex items-center pb-3">
+              <h5 className="text-[#0198E9] text-4xl font-semibold">$976.33</h5>
+              <span className="text-[#8D8D8D] text-xl line-through ml-6 mr-4">
+                $1,020.99
+              </span>
+              <span className="text-white text-sm font-semibold bg-linear-to-tr from-[#FF7A00] from-0% via-[#FF7A00] via-30% to-[#FFB800] to-100% px-2.5 py-1">
+                20%
+              </span>
+            </div>
+            <div className="flex items-center gap-x-5">
+              <div className="text-base">
+                <span className="text-[#3D3D3F]">SKU: </span>
+                <span className="text-[#757575]">12314124124</span>
+              </div>
+              <div className="flex items-center gap-x-1">
+                <IoIosCheckmarkCircle className="text-[#3AB137] text-base" />
+                <span className="text-[#757575] text-base">In Stock</span>
+              </div>
+            </div>
+            <div className="h-px w-[595px] bg-[#EAEAEA] my-4" />
+            <p className="text-[#333333] text-lg leading-7.5 pb-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam
+            </p>
+            <ul className="list-disc ml-8 text-[#333333] text-lg leading-[200%]">
+              <li>Direct Full Array</li>
+              <li>Quantum Dot Technology</li>
+              <li>Ambient Mode</li>
+              <li>One Remote Control</li>
+            </ul>
+            <div className="flex items-center gap-x-4 py-8">
+              <span className="text-[#333333] text-xl">Size</span>
+              <h5 className="text-[#6E6E6F] text-sm bg-white border border-[#EAEAEA] py-1 px-3 cursor-pointer">
+                S
+              </h5>
+              <h5 className="text-[#6E6E6F] text-sm bg-white border border-[#EAEAEA] py-1 px-3 cursor-pointer">
+                M
+              </h5>
+              <h5 className="text-[#6E6E6F] text-sm bg-white border border-[#EAEAEA] py-1 px-3 cursor-pointer">
+                L
+              </h5>
+              <h5 className="text-[#6E6E6F] text-sm bg-white border border-[#EAEAEA] py-1 px-3 cursor-pointer">
+                XL
+              </h5>
+              <h5 className="text-[#6E6E6F] text-sm bg-white border border-[#EAEAEA] py-1 px-3 cursor-pointer">
+                XXL
+              </h5>
+            </div>
+            <div className="flex items-center gap-x-8">
+              <div className="flex items-center gap-x-4">
+                <span className="text-[#3D3D3F] text-sm">Quantity: </span>
+                <div className="border-2 border-[#EAEAEA] rounded-lg">
+                  <button className="text-[#ACACAC] text-base bg-[#EFEFEF] font-semibold cursor-pointer px-2.5 py-[5px]">
+                    -
+                  </button>
+                  <span className="text-[#3D3D3F] px-2.5 py-1.5 border-l-2 border-r-2 border-[#EAEAEA] leading-1">
+                    2
+                  </span>
+                  <button className="text-[#ACACAC] text-base bg-[#EFEFEF] font-semibold cursor-pointer px-2.5 py-[5px]">
+                    +
+                  </button>
+                </div>
+              </div>
+              <button className="text-[#0198E9] capitalize text-xl font-Lato font-medium px-10.5 py-3 border-2 border-[#0198E9] rounded-lg cursor-pointer transition-all duration-400 bg-[#EBF4F9] hover:text-white hover:bg-[#0198E9]">
+                Add cart
+              </button>
+              <button className="text-[#0198E9] capitalize text-xl font-Lato font-medium px-10.5 py-3 border-2 border-[#0198E9] rounded-lg cursor-pointer transition-all duration-400 bg-[#EBF4F9] hover:text-white hover:bg-[#0198E9]">
+                Buy Now
+              </button>
             </div>
           </div>
         </div>
