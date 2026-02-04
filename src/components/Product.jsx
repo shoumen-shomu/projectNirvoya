@@ -47,7 +47,7 @@ import React from 'react';
 import Badge from "./Badge";
 import Images from "./Images";
 import Flex from "./Flex"; 
-import { FaBasketShopping } from "react-icons/fa6"; // or "react-icons/fa"
+import { FaBasketShopping } from "react-icons/fa6";
 
 const Product = ({
   productImg,

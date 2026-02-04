@@ -14,7 +14,11 @@ const FeaturedProducts = () => {
           badgeText={"-23% OFF"}
           productRating={
             <>
-              <IoStar /> <IoStar /> <IoStar /> <IoStar /> <IoStarHalf />
+              <IoStar /> 
+              <IoStar /> 
+              <IoStar /> 
+              <IoStar /> 
+              <IoStarHalf />
             </>
           }
           productTitle={"Women fashion dress set"}
