@@ -75,6 +75,7 @@ const Header = () => {
             >
               Women's Fashion
             </p>
+            {/* Outsite click korle cole Jabe ei jonno eta  */}
             {show && (
               <div
                 className="fixed inset-0 z-10"
