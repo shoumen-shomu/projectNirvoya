@@ -13,7 +13,6 @@ const Home = () => {
         <Category/>
         <FlashDeals/>
         <FeaturedProduct/>
-        <FooterTop/>
         </>
         )
 }
