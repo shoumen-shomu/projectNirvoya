@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaAngleRight } from "react-icons/fa6";
 import Container from "../Container";
 import Images from "../Images";
@@ -21,6 +21,21 @@ import { FaHeart } from "react-icons/fa";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 
 const ProductDetails = () => {
+
+  const [count, setCount] = useState(1);
+
+  const handleIncrement = () => {
+    setCount(count + 1);
+  };
+  
+  const handleDecrement = () => {
+    if (count > 1) {
+      setCount(count - 1);
+    }
+  };
+
+
+
   return (
     <div className="pt-14 pb-12.5 font-Poppins">
       <Container>
@@ -155,13 +170,13 @@ const ProductDetails = () => {
               <div className="flex items-center gap-x-4">
                 <span className="text-[#3D3D3F] text-sm">Quantity: </span>
                 <div className="border-2 border-[#EAEAEA] rounded-lg">
-                  <button className="text-[#ACACAC] text-base bg-[#EFEFEF] font-semibold cursor-pointer px-2.5 py-[5px]">
+                  <button onClick={handleDecrement} className="text-[#ACACAC] text-base bg-[#EFEFEF] font-semibold cursor-pointer px-2.5 py-[5px]">
                     -
                   </button>
                   <span className="text-[#3D3D3F] px-2.5 py-1.5 border-l-2 border-r-2 border-[#EAEAEA] leading-1">
-                    2
+                    {count}
                   </span>
-                  <button className="text-[#ACACAC] text-base bg-[#EFEFEF] font-semibold cursor-pointer px-2.5 py-[5px]">
+                  <button onClick={handleIncrement} className="text-[#ACACAC] text-base bg-[#EFEFEF] font-semibold cursor-pointer px-2.5 py-[5px]">
                     +
                   </button>
                 </div>
