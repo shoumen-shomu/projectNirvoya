@@ -31,11 +31,11 @@ const Product = ({
             </div>
             <p className="text-[12px]">(0)</p>
           </div>
-          <h3 className="w-[294px] h-12 py-2.5 font-Poppins font-normal text-[18px] text-[#383838] leading-[150%]">
+          <h3 className="w-[294px] h-12 py-2.5 font-normal text-[18px] text-[#383838] leading-[150%]">
             {productTitle}
           </h3>        
           <Flex className="justify-between items-center pt-5">
-            <p className="font-Poppins font-medium text-[22px] text-[#0970CD]">
+            <p className="font-medium text-[22px] text-[#0970CD]">
               {productPrice}
             </p>
             <FaBasketShopping className="text-[24px] text-[#0198E9] cursor-pointer" />

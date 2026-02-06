@@ -21,6 +21,7 @@ import f15 from '../../assets/f15.png'
 import f16 from '../../assets/f16.png'
 import Button from '../Button'
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md'
+import { Link } from 'react-router-dom'
 
 
 const FeaturedProduct = () => {
@@ -30,7 +31,11 @@ const FeaturedProduct = () => {
             <Container>
                 <div className="flex justify-between items-center pb-10">
                     <h3 className="text-[26px] font-medium text-[#2E2E2E]">Featured Product</h3>
-                    <button className="flex items-center gap-x-2 text-[#757575] text-base font-medium cursor-pointer">View More <FaArrowRight /></button>
+                        <Link to={'/allproducts'}>
+                        <button className="flex items-center gap-x-2 text-[#757575] text-base font-medium cursor-pointer">
+                                View More <FaArrowRight />
+                        </button>
+                        </Link>
                 </div>
                 <Flex className={'justify-between'}>
                     <Product
@@ -284,7 +289,9 @@ const FeaturedProduct = () => {
                     />
                 </Flex>
                 <div className="text-center pt-5">
+                    <Link to={'/allproducts'}>
                     <button className='px-6.5 py-[11px] text-white font-semibold text-base rounded-[81px] bg-[#0198E9] cursor-pointer flex gap-x-2 items-center mx-auto'>Show more<MdOutlineKeyboardArrowDown/></button>
+                    </Link>
                 </div>
             </Container>
         </div>
