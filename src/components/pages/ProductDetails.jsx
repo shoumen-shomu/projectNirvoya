@@ -19,6 +19,7 @@ import { IoStarSharp } from "react-icons/io5";
 import { FaCheck } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { IoIosCheckmarkCircle } from "react-icons/io";
+import Flex from "../Flex";
 
 const ProductDetails = () => {
 
@@ -187,6 +188,34 @@ const ProductDetails = () => {
               <button className="text-[#0198E9] capitalize text-xl font-Lato font-medium px-10.5 py-3 border-2 border-[#0198E9] rounded-lg cursor-pointer transition-all duration-400 bg-[#EBF4F9] hover:text-white hover:bg-[#0198E9]">
                 Buy Now
               </button>
+            </div>
+          </div>
+        </div>
+        {/* --------------- */}
+        <div className="pt-20">
+          <h4 className="text-[#0198E9] font-medium text-[24px] py-5 bg-[#FCFCFC] px-12 border border-[#F1F1F1]">Producr details of LED Monitor With High Quality In The World</h4>
+          <div className="pt-[25px] pb-10 px-12 bg-white">
+            <h4 className="text-[24px] font-bold text-[#333333] pb-[19px]">See the best picture no matter where you sit</h4>
+            <Flex className={'justify-between pb-[35px] border-b border-[#F1F1F1]'}>
+              <ul className="text-[#333333] text-[18px] w-[618px]">
+                <li className="pb-5">Size : M, L, XL</li>
+                <li className="pb-5">Product Type : Jogger</li>
+                <li className="pb-5">Main Material : Cotton</li>
+                <li className="pb-5">Gender : Male</li>
+                <li className="pb-5">Waist : Mid-rise</li>
+                <li className="pb-5">Zip : Fly</li>
+              </ul>
+              <ul className="text-[#333333] text-[18px]">
+                <li className="pb-5">Zipper : Yes</li>
+                <li className="pb-5">Pocket : Two front and One Back Pockets.</li>
+                <li className="pb-5">100% Authentic Product</li>
+                <li className="pb-5">Product color may slightly vary due to our photography and Sometimes it’s vary on our devices</li>
+              </ul>
+            </Flex>
+            <div className="pt-[25px]">
+              <h4 className="text-[24px] text-[#333333] font-bold">Powerful intelligence for perfection</h4>
+              <p className="pt-[18px]">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+              <p className="pt-[58px]">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita </p>
             </div>
           </div>
         </div>
