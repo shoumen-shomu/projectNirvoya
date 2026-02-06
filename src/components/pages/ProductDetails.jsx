@@ -20,6 +20,10 @@ import { FaCheck } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import Flex from "../Flex";
+import Review from '../../assets/Review.png'
+import ratings from '../../assets/ratings.png'
+import Button from "../Button";
+
 
 const ProductDetails = () => {
 
@@ -38,7 +42,7 @@ const ProductDetails = () => {
 
 
   return (
-    <div className="pt-14 pb-12.5 font-Poppins">
+    <div className="pt-14 pb-12.5 bg-[#FAFAFA]">
       <Container>
         <h6 className="flex items-center gap-x-2 text-base pb-6">
           <span className="text-[#02344F] flex items-center gap-x-2">
@@ -218,6 +222,23 @@ const ProductDetails = () => {
               <p className="pt-[58px]">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita </p>
             </div>
           </div>
+        </div>
+        <div className="mt-7.5 pt-7.5 px-12 pb-15 bg-white">
+          <Flex className={'gap-x-[75px] pb-[35px]'}>
+            <div className="">
+              <h4 className="text-[#3D3D3F] font-medium text-[20px] pb-2.5">Customer reviews</h4>
+              <div className="flex">
+                <Images imgSrc={Review}/>
+              </div>
+            </div>
+            <div className="">
+              <Images imgSrc={ratings}/>
+            </div>
+            <div className="">
+              <Button btnText={'Write a Review'} className={'px-12 py-2.5 text-white'}/>
+            </div>
+          </Flex>
+          <h4 className="text-[#333333] text-[24px] font-medium border-b pb-5 border-[#F1F1F1]">Reviews (4)</h4>
         </div>
       </Container>
     </div>
