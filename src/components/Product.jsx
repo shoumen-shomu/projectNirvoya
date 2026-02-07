@@ -1,25 +1,26 @@
-import { useState } from "react"; // 1. useState import thakte hobe
+import { useState } from "react";
 import Badge from "./Badge";
 import Images from "./Images";
 import Flex from "./Flex"; 
 import { FaBasketShopping, FaHeart } from "react-icons/fa6";
 
 const Product = ({
-  productImg,
-  badgeText,
-  productTitle,
-  productRating,
-  productPrice,
-  className, 
-}) => {
-  const [isLiked, setIsLiked] = useState(false);
-  const handleLike = () => {
-    setIsLiked(!isLiked);
-  };
+    productImg,
+    badgeText,
+    productTitle,
+    productRating,
+    productPrice,
+    className, 
+  }) => {
+    const [isLiked, setIsLiked] = useState(false);
+    const handleLike = () => {
+      setIsLiked(!isLiked);
+    };
+  
   return (
     <div> 
       <div className="bg-white px-[9px] pt-[9px] pb-[15px] border-2 border-[#E9E9E9] rounded-[10px] inline-block relative">
-        <Images className={'cursor-pointer'} imgSrc={productImg} />
+        <Images className={'cursor-pointer'} imgSrc={productImg}/>
         {badgeText && <Badge className={"absolute top-[9px] left-[9px]"} badgeText={badgeText}/>}
         <FaHeart 
           onClick={handleLike}

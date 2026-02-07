@@ -3,23 +3,31 @@ import Container from "../Container";
 import Product from "../Product";
 import women from "../../assets/women.png";
 import { IoStar } from "react-icons/io5";
-import { IoStarHalf } from "react-icons/io5";
 import Flex from "../Flex";
 import { FaArrowRight } from "react-icons/fa6";
 import w2 from '../../assets/w2.png'
 import w3 from '../../assets/w3.png'
 import w4 from '../../assets/w4.png'
+import { Link } from "react-router-dom";
 
 
 const FlashDeals = () => {
   return (
     <div className="pb-12.5">
       <Container>
+        {/* title part */}
         <div className="flex justify-between items-center pb-10">
           <h3 className="text-[26px] font-medium text-[#2E2E2E]">Flash Deals</h3>
-          <button className="flex items-center gap-x-2 text-[#757575] text-base font-medium cursor-pointer">View More <FaArrowRight /></button>
+          <Link to={'/allproducts'}>
+            <button className="flex items-center gap-x-2 text-[#757575] text-base font-medium cursor-pointer">
+              View More <FaArrowRight />
+            </button>
+          </Link>
         </div>
-          <Flex className={'justify-between'}>
+        {/* title part */}
+        {/* product part  */}
+          <Flex className={'lg:justify-between flex-col lg:flex-row gap-y-5'}>
+            {/* product 1 */}
             <Product
               productImg={women}
               badgeText={"-23% OFF"}
@@ -35,6 +43,7 @@ const FlashDeals = () => {
               productTitle={"Headrest Executive Mesh Office Chair set"}
               productPrice={"৳10500"}
             />
+            {/* product 2 */}
             <Product
               productImg={w2}
               badgeText={"-23% OFF"}
@@ -50,6 +59,7 @@ const FlashDeals = () => {
               productTitle={"Women fashion dress set"}
               productPrice={"৳1000"}
             />
+            {/* product 3 */}
             <Product
               productImg={w3}
               badgeText={"-23% OFF"}
@@ -65,6 +75,7 @@ const FlashDeals = () => {
               productTitle={"Headrest Executive Mesh Office Chair set"}
               productPrice={"৳5000"}
             />
+            {/* product 4 */}
             <Product
               productImg={w4}
               badgeText={"-23% OFF"}
@@ -81,6 +92,7 @@ const FlashDeals = () => {
               productPrice={"৳1000.00"}
             />
           </Flex>
+          {/* product part  */}
       </Container>
     </div>
   );

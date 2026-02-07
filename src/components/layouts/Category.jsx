@@ -22,7 +22,7 @@ import category15 from '../../assets/category15.png'
 
 const Category = () => {
   return (
-    <div className="py-12 font-Poppins">
+    <div className="py-12">
       <Container>
         <h3 className="text-[#383838] text-[26px] font-medium pb-8">
           Category
