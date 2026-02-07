@@ -47,8 +47,8 @@ const ProductDetails = () => {
 
 
   return (
-    <div className="pt-14 pb-12.5 bg-[#FAFAFA]">
-      <Container>
+    <div className="pt-14 pb-12.5 bg-[#FAFAFA] w-[420px] lg:w-full">
+      <Container className={'lg:w-[1405px] w-[395px]'}>
         <h6 className="flex items-center gap-x-2 text-base pb-6">
           <span className="text-[#02344F] flex items-center gap-x-2">
             Home <FaAngleRight />

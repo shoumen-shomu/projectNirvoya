@@ -23,8 +23,8 @@ const Allproducts = () => {
     return (
         <>
         <section>
-            <div className="bg-[#FAFAFA] pt-[43px] pb-12.5">
-                <Container>
+            <div className="bg-[#FAFAFA] pt-[43px] pb-12.5 w-[420px] lg:w-full">
+                <Container className={'lg:w-[1405px] w-[395px]'}>
                     <Flex className={'gap-x-13 items-start!'}>
                         {/* left side start */}
                         <div className="leftBar w-[20%] py-[25px] bg-white px-5">
