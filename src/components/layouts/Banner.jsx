@@ -14,8 +14,8 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div className="pt-3 pb-[50px]">
-      <Container>
+    <div className="pt-3 pb-[50px] w-[420px] lg:w-full">
+      <Container className={'lg:w-[1405px] w-[395px]'}>
         <Flex className={"lg:justify-between flex-col lg:flex-row gap-y-5"}>
           {/* Left Side: Swiper */}
           <div className="left lg:w-[65%] w-full">
