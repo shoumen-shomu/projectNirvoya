@@ -22,8 +22,8 @@ import category15 from '../../assets/category15.png'
 
 const Category = () => {
   return (
-    <div className="py-12">
-      <Container>
+    <div className="py-12 w-[420px] lg:w-full">
+      <Container className={'lg:w-[1405px] w-[395px]'}>
         <h3 className="text-[#383838] text-[26px] font-medium pb-8">
           Category
         </h3>
@@ -39,7 +39,6 @@ const Category = () => {
             </div>
             <FaAngleRight className="text-[#999999]" />
           </Link>
-
           <Link
             to={"/"}
             className="flex items-center justify-between shadow-[0_0_12px_rgba(0,0,0,0.08)] rounded-md p-4 w-[48%] lg:w-full">
@@ -49,7 +48,6 @@ const Category = () => {
             </div>
             <FaAngleRight className="text-[#999999]" />
           </Link>
-
           <Link
             to={"/"}
             className="flex items-center justify-between shadow-[0_0_12px_rgba(0,0,0,0.08)] rounded-md p-4 w-[48%] lg:w-full">

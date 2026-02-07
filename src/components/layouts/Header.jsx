@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header className="relative w-[420px] lg:w-full">
       <div className="border-b-2 border-[#EFEEEE]">
-        <Container className={'lg:w-[1405px] w-[395px] '}>
+        <Container className={'lg:w-[1405px] w-[395px]'}>
           <Flex className="py-[33px] lg:justify-between flex-col lg:flex-row gap-y-10">
             <Link to={'/'}>
               <Images imgSrc={Logo} className={"cursor-pointer"} />

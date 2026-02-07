@@ -9,8 +9,8 @@ import Container from "../Container";
 const FooterTop = () => {
   return (
     <>
-      <div className=" mt-10">
-        <Container>
+      <div className=" mt-10 w-[420px] lg:w-full">
+        <Container className={'lg:w-[1405px] w-[395px]'}>
           <div className="flex lg:items-center lg:justify-between py-10 flex-col lg:flex-row gap-y-5 items-start">
             <Images imgSrc={Footertop1} />
             <Images imgSrc={Footertop2} />

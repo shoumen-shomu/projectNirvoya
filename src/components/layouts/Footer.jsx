@@ -11,9 +11,9 @@ import paymentApps from "/src/assets/fPaymentApps.png";
 
 const Footer = () => {
   return (
-    <footer className="w-full">
+    <footer className="w-[420px] lg:w-full">
       <div className="py-12 border border-[#ececec]">
-        <Container>
+        <Container className={'lg:w-[1405px] w-[395px]'}>
           <div className="flex lg:flex-row flex-col gap-y-4 lg:justify-between">
             <div className="pb-10 lg:pb-0">
               <div className="lg:w-[150px]">
@@ -111,8 +111,8 @@ const Footer = () => {
         </Container>
       </div>
       {/* Bottom items  */}
-      <div className="w-full">
-        <Container>
+      <div className="w-[420px] lg:w-full">
+        <Container className={'lg:w-[1405px] w-[395px]'}>
           <div className="mt-10 flex lg:flex-row flex-col items-center lg:justify-between gap-y-4">
             <p className="text-[#757575] text-base ">
               Projectnirvoya - © 2021 All Rights Reserved

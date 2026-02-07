@@ -13,8 +13,8 @@ import { Link } from "react-router-dom";
 
 const FlashDeals = () => {
   return (
-    <div className="pb-12.5">
-      <Container>
+    <div className="pb-12.5 w-[420px] lg:w-full">
+      <Container className={'lg:w-[1405px] w-[395px]'}>
         {/* title part */}
         <div className="flex justify-between items-center pb-10">
           <h3 className="text-[26px] font-medium text-[#2E2E2E]">Flash Deals</h3>
