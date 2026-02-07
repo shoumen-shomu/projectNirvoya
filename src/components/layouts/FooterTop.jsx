@@ -11,7 +11,7 @@ const FooterTop = () => {
     <>
       <div className=" mt-10">
         <Container>
-          <div className="flex items-center justify-between py-10">
+          <div className="flex lg:items-center lg:justify-between py-10 flex-col lg:flex-row gap-y-5 items-start">
             <Images imgSrc={Footertop1} />
             <Images imgSrc={Footertop2} />
             <Images imgSrc={Footertop3} />
