@@ -122,7 +122,7 @@ const Allproducts = () => {
                             {/* first line start */}
                             <div className="pt-6">
                                 <Flex className={' flex-wrap gap-y-5 justify-between px-2'}>
-                                    {/* product */}
+                                    {/* product 1*/}
                                     <div className="w-[48%] lg:w-[33%]">
                                         <Product 
                                         productImg={f7}
@@ -140,7 +140,7 @@ const Allproducts = () => {
                                         productPrice={"৳5000"}
                                         />
                                     </div>
-                                    {/* product */}
+                                    {/* product 2*/}
                                     <div className="w-[48%] lg:w-[33%]">
                                         <Product
                                         productImg={w4}
@@ -158,7 +158,7 @@ const Allproducts = () => {
                                         productPrice={"৳1000.00"}
                                         />
                                     </div>
-                                    {/* product */}
+                                    {/* product 3*/}
                                     <div className="w-[48%] lg:w-[33%]">
                                         <Product
                                         productImg={f6}
@@ -176,7 +176,7 @@ const Allproducts = () => {
                                         productPrice={"৳1000"}
                                         />
                                     </div>
-                                    {/* product */}
+                                    {/* product 4*/}
                                     <div className="w-[48%] lg:w-[33%]">
                                         <Product 
                                         productImg={w2}
@@ -194,7 +194,7 @@ const Allproducts = () => {
                                         productPrice={"৳1000"}
                                         />
                                     </div>
-                                    {/* product */}
+                                    {/* product 5*/}
                                     <div className="w-[48%] lg:w-[33%]">
                                         <Product
                                         productImg={w3}
@@ -212,7 +212,7 @@ const Allproducts = () => {
                                         productPrice={"৳5000"}
                                         />
                                     </div>
-                                    {/* product */}
+                                    {/* product 6*/}
                                     <div className="w-[48%] lg:w-[33%]">
                                         <Product
                                         productImg={f12}
@@ -230,7 +230,7 @@ const Allproducts = () => {
                                         productPrice={"৳1000.00"}
                                         />
                                     </div>
-                                    {/* product */}
+                                    {/* product 7*/}
                                     <div className="w-[48%] lg:w-[33%]">
                                         <Product 
                                         productImg={f7}
@@ -248,7 +248,7 @@ const Allproducts = () => {
                                         productPrice={"৳5000"}
                                         />
                                     </div>
-                                    {/* product */}
+                                    {/* product 8*/}
                                     <div className="w-[48%] lg:w-[33%]">
                                         <Product
                                         productImg={w4}
@@ -266,7 +266,7 @@ const Allproducts = () => {
                                         productPrice={"৳1000.00"}
                                         />
                                     </div>
-                                    {/* product */}
+                                    {/* product 9*/}
                                     <div className="w-[48%] lg:w-[33%]">
                                         <Product
                                         productImg={f6}
@@ -284,7 +284,7 @@ const Allproducts = () => {
                                         productPrice={"৳1000"}
                                         />
                                     </div>
-                                    {/* product */}
+                                    {/* product 10*/}
                                     <div className="w-[48%] lg:w-[33%]">
                                         <Product 
                                         productImg={w2}
@@ -302,7 +302,7 @@ const Allproducts = () => {
                                         productPrice={"৳1000"}
                                         />
                                     </div>
-                                    {/* product */}
+                                    {/* product 11*/}
                                     <div className="w-[48%] lg:w-[33%]">
                                         <Product
                                         productImg={w3}
@@ -320,7 +320,7 @@ const Allproducts = () => {
                                         productPrice={"৳5000"}
                                         />
                                     </div>
-                                    {/* product */}
+                                    {/* product 12*/}
                                     <div className="w-[48%] lg:w-[33%]">
                                         <Product
                                         productImg={f12}
