@@ -29,6 +29,7 @@
 import { Routes , Route } from 'react-router-dom'
 import React, { Suspense, lazy } from 'react'
 import RootLayouts from './components/layouts/RootLayouts'
+import Loading from './components/Loading'
 
 const Home = lazy(() => import('./components/pages/Home'))
 const ProductDetails = lazy(() => import('./components/pages/ProductDetails'))
@@ -37,7 +38,7 @@ const Allproducts = lazy(() => import('./components/pages/Allproducts'))
 function App () {
   return (
     <>
-      <Suspense fallback={<div className="loading">Loading...</div>}>
+      <Suspense fallback={<Loading />}>
         <Routes>
           <Route path="/" element={<RootLayouts />}>
             <Route index element={<Home/>} />
