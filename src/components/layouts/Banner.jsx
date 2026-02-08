@@ -32,8 +32,7 @@ const Banner = () => {
               }}
               modules={[Autoplay, Pagination]}
               spaceBetween={30}
-              className="h-full"
-            >
+              className="h-full">
               <SwiperSlide>
                 <Link to={"/productDetails"}>
                   <Images
