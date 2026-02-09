@@ -49,7 +49,7 @@ const ProductDetails = () => {
   return (
     <div className="pt-14 pb-12.5 bg-[#FAFAFA] w-[420px] lg:w-full">
       <Container className={'lg:w-[1405px] w-[395px]'}>
-        <h6 className="flex items-center gap-x-2 text-base pb-6">
+        <h6 className="flex items-center gap-x-2 lg:text-base text-sm pb-6">
           <span className="text-[#02344F] flex items-center gap-x-2">
             Home <FaAngleRight />
           </span>{" "}
@@ -60,8 +60,8 @@ const ProductDetails = () => {
             Men's Stand Collar Leather Jacket
           </span>
         </h6>
-        <div className="grid grid-cols-2 gap-x-[115px] justify-between">
-          <div className="w-[680px]">
+        <div className="lg:grid lg:grid-cols-2 gap-x-[115px] lg:justify-between">
+          <div className="lg:w-[680px]">
             <div className="flex gap-x-6">
               <div className="">
                 <Images imgSrc={productDetailsBig1} />
@@ -98,29 +98,31 @@ const ProductDetails = () => {
               </div>
             </div>
           </div>
-          <div className="w-[610px]">
-            <h3 className="text-[#333333] text-[26px] font-medium pb-4.5">
+          <div className="lg:w-[610px] pt-5 lg:pt-0">
+            <h3 className="text-[#333333] lg:text-[26px] text-xl font-medium pb-4.5">
               Super Skinny Rib Trouser & Joggers for Men By Sowdagar Trouser
             </h3>
-            <div className="flex items-center pb-8">
-              <span className="text-[#333] text-lg font-medium pr-[5px]">
-                4.0
-              </span>
-              <div className="flex items-center gap-x-[3px] -mt-1">
-                <IoStarSharp className="text-2xl text-[#FFB340]" />
-                <IoStarSharp className="text-2xl text-[#FFB340]" />
-                <IoStarSharp className="text-2xl text-[#FFB340]" />
-                <IoStarSharp className="text-2xl text-[#FFB340]" />
-                <IoStarSharp className="text-2xl text-[#A7A7A7]" />
+            <div className="flex-wrap lg:flex gap-y-2 lg:gap-y-0 items-center pb-8">
+              <div className="flex items-center">
+                    <h4 className="text-[#333] text-lg font-medium pr-[5px]">
+                    4.0
+                  </h4>
+                  <div className="flex items-center gap-x-[3px] -mt-1">
+                    <IoStarSharp className="text-2xl text-[#FFB340]" />
+                    <IoStarSharp className="text-2xl text-[#FFB340]" />
+                    <IoStarSharp className="text-2xl text-[#FFB340]" />
+                    <IoStarSharp className="text-2xl text-[#FFB340]" />
+                    <IoStarSharp className="text-2xl text-[#A7A7A7]" />
+                  </div>
+                  <span className="text-[#BABABA] text-lg pl-1">(223)</span>
+                  <div className="h-7 w-0.5 rounded-[22px] bg-[#F2F2F2] mx-4" />
+                  <FaCheck className="text-[#0AC96D] text-xl" />
+                  <div className="text-[#333333] text-lg pl-2.5">
+                    <span className="font-semibold">4,320</span> Sold
+                  </div>
+                  <div className="h-7 w-0.5 rounded-[22px] bg-[#F2F2F2] mx-4" />
               </div>
-              <span className="text-[#BABABA] text-lg pl-1">(223)</span>
-              <div className="h-7 w-0.5 rounded-[22px] bg-[#F2F2F2] mx-4" />
-              <FaCheck className="text-[#0AC96D] text-xl" />
-              <div className="text-[#333333] text-lg pl-2.5">
-                <span className="font-semibold">4,320</span> Sold
-              </div>
-              <div className="h-7 w-0.5 rounded-[22px] bg-[#F2F2F2] mx-4" />
-              <Link to={""} className="flex items-center gap-x-3">
+              <Link to={""} className="flex items-center gap-x-3 pt-3 lg:pt-0">
                 <FaHeart className="text-[#C7C7C7] text-[22px]" />
                 <span className="text-[#0198E9] text-lg font-Lato font-bold pb-0.5">
                   Add to wishlist
@@ -176,9 +178,9 @@ const ProductDetails = () => {
                 XXL
               </h5>
             </div>
-            <div className="flex items-center gap-x-8">
-              <div className="flex items-center gap-x-4">
-                <span className="text-[#3D3D3F] text-sm">Quantity: </span>
+            <div className="flex-wrap lg:flex items-center gap-x-8">
+              <div className="flex items-center gap-x-4 pb-">
+                <h4 className="text-[#3D3D3F] text-sm">Quantity: </h4>
                 <div className="border-2 border-[#EAEAEA] rounded-lg">
                   <button onClick={handleDecrement} className="text-[#ACACAC] text-base bg-[#EFEFEF] font-semibold cursor-pointer px-2.5 py-[5px]">
                     -
@@ -191,12 +193,14 @@ const ProductDetails = () => {
                   </button>
                 </div>
               </div>
-              <button className="text-[#0198E9] capitalize text-xl font-Lato font-medium px-10.5 py-3 border-2 border-[#0198E9] rounded-lg cursor-pointer transition-all duration-400 bg-[#EBF4F9] hover:text-white hover:bg-[#0198E9]">
-                Add cart
-              </button>
-              <button className="text-[#0198E9] capitalize text-xl font-Lato font-medium px-10.5 py-3 border-2 border-[#0198E9] rounded-lg cursor-pointer transition-all duration-400 bg-[#EBF4F9] hover:text-white hover:bg-[#0198E9]">
-                Buy Now
-              </button>
+              <div className="btnn pt-5 lg:pt-0 flex gap-x-5">
+                <button className="text-[#0198E9] capitalize text-xl font-Lato font-medium px-10.5 py-3 border-2 border-[#0198E9] rounded-lg cursor-pointer transition-all duration-400 bg-[#EBF4F9] hover:text-white hover:bg-[#0198E9]">
+                  Add cart
+                </button>
+                <button className="text-[#0198E9] capitalize text-xl font-Lato font-medium px-10.5 py-3 border-2 border-[#0198E9] rounded-lg cursor-pointer transition-all duration-400 bg-[#EBF4F9] hover:text-white hover:bg-[#0198E9]">
+                  Buy Now
+                </button>
+              </div>
             </div>
           </div>
         </div>
